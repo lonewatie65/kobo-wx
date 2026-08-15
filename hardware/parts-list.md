@@ -1,16 +1,19 @@
 # Kobo-WX Parts List
 
-This is the working hardware inventory. Exact models, quantities, links, and notes can be added as the build progresses.
+This is the working hardware inventory. Exact board markings, quantities, links, and notes can be added as the build progresses.
 
 | Component | Purpose | Status |
 | --- | --- | --- |
-| ESP32-S3 development board | Main controller | Acquired |
-| SHT31 module | Temperature and humidity | Acquired |
+| ESP32 CP2012 USB-C (Type-C) development board module | Main controller | Acquired |
+| GY-BME280-5 / BME280 5V module | Temperature, humidity, and atmospheric pressure | Acquired |
 | Breadboard | Solderless prototyping | Acquired |
 | Jumper wires | Breadboard connections | Acquired |
 | USB-C cable | Power/programming/serial | Acquired |
-| Pressure sensor | Barometric pressure | Planned |
 | Enclosure | Final physical housing | Planned |
+
+## Verification note
+
+The ESP32 board was sold/listed as **CP2012 USB-C**. Similar ESP32 development boards commonly use a **CP2102** USB-to-UART bridge. Before we write model-specific driver or pinout instructions, inspect the actual board markings and record exactly what is fitted.
 
 ## Workshop equipment
 
