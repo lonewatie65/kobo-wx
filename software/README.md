@@ -6,11 +6,14 @@ Kobo-WX software will be developed after the initial hardware path is documented
 
 ### MicroPython
 
-Code running directly on the ESP32-S3:
+Code running directly on the ESP32:
 
-- Sensor detection
-- Sensor readings
-- Derived weather values
+- BME280 detection over I2C
+- Temperature readings
+- Relative humidity readings
+- Atmospheric pressure readings
+- Derived weather values such as dew point
+- Pressure presentation in hPa and inHg
 - USB serial output
 - Later local Wi-Fi communication
 
