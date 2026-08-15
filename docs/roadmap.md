@@ -4,31 +4,32 @@
 
 - [x] Create dedicated Kobo-WX repository
 - [x] Establish hardware documentation structure
-- [ ] Confirm exact ESP32-S3 board and pinout
-- [ ] Breadboard SHT31 connection
+- [x] Record actual controller and sensor hardware
+- [ ] Confirm exact ESP32 board/chip markings and pinout
+- [ ] Confirm GY-BME280-5 module pin labels
+- [ ] Breadboard ESP32 ↔ BME280 I2C connection
 - [ ] Power-on test
 
 ## Phase 2 — MicroPython
 
-- [ ] Install/confirm MicroPython on ESP32-S3
-- [ ] Detect SHT31 over I2C
+- [ ] Install/confirm suitable MicroPython firmware on the ESP32
+- [ ] Detect BME280 over I2C
 - [ ] Read temperature
 - [ ] Read relative humidity
+- [ ] Read atmospheric pressure
 - [ ] Calculate dew point
+- [ ] Display pressure in hPa and inHg
 - [ ] Output readings over USB serial
 
-## Phase 3 — Pressure
+## Phase 3 — Weather calculations and presentation
 
-- [ ] Select pressure sensor
-- [ ] Add pressure measurement
-- [ ] Display hPa
-- [ ] Display inHg
+- [ ] Define JSON data format
 - [ ] Explore local sea-level/QNH correction
+- [ ] Decide which raw and derived values belong in the standard Kobo-WX output
 
 ## Phase 4 — Kobo network
 
-- [ ] Define JSON data format
-- [ ] Connect ESP32-S3 to local Wi-Fi
+- [ ] Connect ESP32 to local Wi-Fi
 - [ ] Build local receiver/service
 - [ ] Create desktop readout
 
